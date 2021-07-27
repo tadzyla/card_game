@@ -26,6 +26,14 @@ export default class Deck {
         return this.cards.length
     }
 
+    pop() {
+        return this.cards.shift()  // shift will take the first element
+    }
+
+    push(card) {
+        this.cards.push(card)  // adds a card to the bottom of the deck
+    }
+
     shuffle() {
         for(let i = this.numberOfCards - 1; i > 0; i-- ) {
             
